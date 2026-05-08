@@ -44,15 +44,13 @@
     });
   }
 
-  // Navbar shadow and background on scroll
+  // Navbar shadow on scroll
   function onScroll() {
     if (!navbar) return;
     if (window.scrollY > 20) {
-      navbar.style.boxShadow = '0 4px 30px rgba(15,23,42,0.08)';
-      navbar.style.background = 'rgba(255,255,255,0.95)';
+      navbar.style.boxShadow = '0 8px 30px rgba(15,23,42,0.2)';
     } else {
       navbar.style.boxShadow = 'none';
-      navbar.style.background = 'rgba(255,255,255,0.88)';
     }
   }
   window.addEventListener('scroll', onScroll, { passive: true });
