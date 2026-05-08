@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bricks — Gestão Inteligente de Patrimônio Imobiliário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <div class="brick brick-top"></div>
+          <div class="brick brick-left"></div>
+          <div class="brick brick-right"></div>
+        </div>
+        <span class="logo-text">My Bricks</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#planos" class="btn btn-primary">Começar agora</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge">Gestão completa do seu patrimônio</span>
+        <h1>Controle seus imóveis com <span class="accent">inteligência</span> e <span class="accent">simplicidade</span></h1>
+        <p class="hero-subtitle">
+          Cadastre propriedades, acompanhe receitas e despesas, gere contratos e tenha uma visão 360° do seu portfólio imobiliário em um só lugar.
+        </p>
+        <div class="hero-buttons">
+          <a href="#planos" class="btn btn-gold btn-lg">Escolher meu plano</a>
+          <a href="#funcionalidades" class="btn btn-outline btn-lg">Conhecer funcionalidades</a>
+        </div>
+        <div class="hero-tags">
+          <span class="hero-tag">Cadastro inteligente</span>
+          <span class="hero-tag">Controle financeiro</span>
+          <span class="hero-tag">Contratos em PDF</span>
+          <span class="hero-tag">Mapa interativo</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-preview">
+          <div class="preview-header">
+            <div class="dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="preview-title">Painel My Bricks</span>
+          </div>
+          <div class="preview-body">
+            <div class="preview-cards">
+              <div class="p-card blue">
+                <span class="p-label">Patrimônio Estimado</span>
+                <span class="p-value">R$ 4.250.000</span>
+              </div>
+              <div class="p-card gold">
+                <span class="p-label">Yield Médio</span>
+                <span class="p-value">8,4% a.a.</span>
+              </div>
+              <div class="p-card blue-light">
+                <span class="p-label">Imóveis</span>
+                <span class="p-value">12</span>
+              </div>
+            </div>
+            <div class="preview-chart">
+              <div class="bar" style="height: 40%"></div>
+              <div class="bar" style="height: 65%"></div>
+              <div class="bar" style="height: 50%"></div>
+              <div class="bar" style="height: 85%"></div>
+              <div class="bar" style="height: 60%"></div>
+              <div class="bar" style="height: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted / Social proof -->
+  <section class="trusted">
+    <div class="container">
+      <p>Feito para quem leva o patrimônio a sério</p>
+    </div>
+  </section>
+
+  <!-- Funcionalidades -->
+  <section class="features" id="funcionalidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Funcionalidades</span>
+        <h2>Tudo que você precisa para <span class="accent">gerenciar seus imóveis</span></h2>
+        <p>Uma plataforma completa que vai do cadastro simples ao controle financeiro avançado.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon blue"><i data-lucide="home"></i></div>
+          <h3>Cadastro de Imóveis</h3>
+          <p>Registre propriedades com fotos, documentos, localização no mapa e dados completos de compra e locação.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon gold"><i data-lucide="wallet"></i></div>
+          <h3>Controle Financeiro</h3>
+          <p>Acompanhe receitas, despesas, yields e TIR. Tenha clareza total da performance do seu portfólio.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue"><i data-lucide="file-text"></i></div>
+          <h3>Contratos e Reservas</h3>
+          <p>Gerencie contratos de locação tradicional e reservas de temporada com geração automática de PDF.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon gold"><i data-lucide="map-pin"></i></div>
+          <h3>Mapa Interativo</h3>
+          <p>Visualize seus imóveis no mapa com filtros por cliente, tipo e status. Análise geográfica completa.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue"><i data-lucide="pie-chart"></i></div>
+          <h3>Relatórios e Dashboards</h3>
+          <p>Relatórios em PDF e Excel, dashboard com indicadores-chave e histórico de auditoria de todas as ações.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon gold"><i data-lucide="shield-check"></i></div>
+          <h3>Segurança e Acesso</h3>
+          <p>Whitelist de e-mails, controle de permissões por papel e logs de auditoria para sua tranquilidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section class="pricing" id="planos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Planos</span>
+        <h2>Escolha o plano ideal para o seu <span class="accent">tamanho</span></h2>
+        <p>Do investidor iniciante ao gestor profissional, temos a solução certa para você.</p>
+      </div>
+      <div class="pricing-grid">
+        <!-- Inicial -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Inicial</h3>
+            <p>Para quem está começando a organizar o patrimônio.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">R$</span>
+            <span class="amount">50</span>
+            <span class="period">/mês</span>
+          </div>
+          <div class="pricing-trial">7 dias grátis para testar</div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> Até <strong>10 propriedades</strong></li>
+            <li><i data-lucide="check"></i> Cadastro completo de imóveis</li>
+            <li><i data-lucide="check"></i> Controle financeiro básico</li>
+            <li><i data-lucide="check"></i> Mapa interativo</li>
+            <li><i data-lucide="check"></i> Relatórios em PDF</li>
+            <li class="disabled"><i data-lucide="x"></i> Contratos e reservas</li>
+            <li class="disabled"><i data-lucide="x"></i> Múltiplos usuários</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-block">Testar 7 dias grátis</a>
+        </div>
+
+        <!-- Investidor -->
+        <div class="pricing-card featured">
+          <div class="badge-popular">Mais popular</div>
+          <div class="pricing-header">
+            <h3>Investidor</h3>
+            <p>Para quem quer escalar e personalizar a gestão.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">R$</span>
+            <span class="amount">97</span>
+            <span class="period">/mês</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> <strong>Propriedades ilimitadas</strong></li>
+            <li><i data-lucide="check"></i> Tudo do plano Inicial</li>
+            <li><i data-lucide="check"></i> Gestão de contratos e reservas</li>
+            <li><i data-lucide="check"></i> Geração de contratos em PDF</li>
+            <li><i data-lucide="check"></i> Templates personalizáveis</li>
+            <li><i data-lucide="check"></i> Suporte prioritário</li>
+            <li class="disabled"><i data-lucide="x"></i> Múltiplos usuários</li>
+          </ul>
+          <a href="#" class="btn btn-gold btn-block">Assinar agora</a>
+        </div>
+
+        <!-- Empresarial -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Empresarial</h3>
+            <p>Para gestores e imobiliárias que precisam de visão completa.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">R$</span>
+            <span class="amount">247</span>
+            <span class="period">/mês</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> <strong>Tudo do plano Investidor</strong></li>
+            <li><i data-lucide="check"></i> <strong>Múltiplos usuários</strong> (admin + equipe)</li>
+            <li><i data-lucide="check"></i> Visão consolidada por conta</li>
+            <li><i data-lucide="check"></i> Controle de permissões avançado</li>
+            <li><i data-lucide="check"></i> Auditoria e logs de ações</li>
+            <li><i data-lucide="check"></i> API e integrações</li>
+            <li><i data-lucide="check"></i> Suporte dedicado</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-block">Falar com vendas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Como funciona</span>
+        <h2>Em <span class="accent">3 passos</span> você está no controle</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Crie sua conta</h3>
+          <p>Escolha o plano ideal, faça o cadastro em menos de 2 minutos e configure seu perfil.</p>
+        </div>
+        <div class="step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Cadastre seus imóveis</h3>
+          <p>Adicione propriedades manualmente, por chat com IA ou importando dados. Tudo fica organizado.</p>
+        </div>
+        <div class="step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Acompanhe e decida</h3>
+          <p>Monitore yields, TIR, receitas e despesas. Tome decisões baseadas em dados reais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Pronto para organizar seu patrimônio?</h2>
+        <p>Teste 7 dias grátis e escolha o plano ideal para o seu portfólio imobiliário.</p>
+        <a href="#planos" class="btn btn-gold btn-lg">Testar 7 dias grátis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato / Fale Conosco -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fale Conosco</span>
+        <h2>Estamos aqui para <span class="accent">ajudar você</span></h2>
+        <p>Tem dúvidas sobre planos, funcionalidades ou precisa de suporte? Entre em contato.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card whatsapp">
+          <div class="contact-icon">
+            <i data-lucide="message-circle"></i>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>Atendimento rápido e direto pelo celular.</p>
+          <a href="#" class="btn btn-gold">Conversar no WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon blue">
+            <i data-lucide="mail"></i>
+          </div>
+          <h3>E-mail</h3>
+          <p>Envie sua dúvida ou sugestão a qualquer momento.</p>
+          <a href="mailto:contato@mybricks.com.br" class="btn btn-outline">Enviar e-mail</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon blue">
+            <i data-lucide="clock"></i>
+          </div>
+          <h3>Horário de atendimento</h3>
+          <p>Segunda a sexta, das 9h às 18h (horário de Brasília).</p>
+          <span class="contact-note">Respostas em até 24h úteis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float -->
+  <a href="#" class="whatsapp-float" aria-label="Conversar no WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <div class="brick brick-top"></div>
+              <div class="brick brick-left"></div>
+              <div class="brick brick-right"></div>
+            </div>
+            <span class="logo-text">My Bricks</span>
+          </a>
+          <p>Gestão inteligente de patrimônio imobiliário para investidores e gestores.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 My Bricks. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
