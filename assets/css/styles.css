@@ -1104,48 +1104,185 @@ img { max-width: 100%; display: block; }
 }
 
 /* Responsive */
+@media (max-width: 1200px) {
+  .logo-img { height: 90px; }
+  .nav-container { height: 100px; }
+  .nav-links { gap: 24px; }
+  .hero { padding: 130px 0 80px; }
+  .hero-container { gap: 48px; }
+  .onboarding-box { padding: 48px; gap: 48px; }
+}
+
+@media (max-width: 1024px) {
+  .hero-container { gap: 48px; }
+  .hero h1 { font-size: clamp(30px, 4.5vw, 48px); }
+  .dashboard-preview { max-width: 420px; }
+}
+
 @media (max-width: 980px) {
-  .hero-container { grid-template-columns: 1fr; gap: 56px; }
+  .container { padding: 0 20px; }
+  .hero-container { grid-template-columns: 1fr; gap: 48px; }
   .hero-visual { order: -1; }
-  .features-grid { grid-template-columns: repeat(2, 1fr); }
-  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero { padding: 140px 0 80px; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .contact-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .pricing-card.featured { transform: none; }
   .pricing-card.featured:hover { transform: translateY(-6px); }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .steps { gap: 24px; }
-  .onboarding-box { grid-template-columns: 1fr; gap: 48px; padding: 48px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .steps { gap: 20px; }
+  .onboarding-box { grid-template-columns: 1fr; gap: 40px; padding: 48px; }
   .onboarding-visual { order: -1; }
+  .section-header { margin-bottom: 48px; }
+  .features, .pricing, .how-it-works, .contact, .cta, .onboarding { padding: 80px 0; }
+  .cta-box { padding: 56px 36px; }
+}
+
+@media (max-width: 768px) {
+  .logo-img { height: 72px; }
+  .nav-container { height: 90px; }
+  .nav-links { inset: 90px 0 auto 0; }
+  .hero { padding: 110px 0 60px; }
+  .hero h1 { font-size: clamp(26px, 7vw, 34px); margin-bottom: 16px; }
+  .hero-subtitle { font-size: 15px; margin-bottom: 24px; }
+  .hero-buttons { margin-bottom: 28px; }
+  .hero-tags { gap: 8px; }
+  .hero-tag { padding: 8px 14px; font-size: 12px; }
+  .dashboard-preview { max-width: 100%; }
+  .preview-cards { gap: 8px; }
+  .p-card { padding: 10px; }
+  .p-value { font-size: 14px; }
+  .section-header h2 { font-size: clamp(22px, 6vw, 28px); }
+  .section-header p { font-size: 15px; }
+  .section-header { margin-bottom: 40px; }
+  .features, .pricing, .how-it-works, .contact, .cta, .onboarding { padding: 64px 0; }
+  .feature-card { padding: 24px; }
+  .pricing-card { padding: 28px; }
+  .contact-card { padding: 28px 24px; }
+  .cta-box { padding: 48px 24px; }
+  .cta-box h2 { font-size: clamp(22px, 6vw, 28px); }
+  .cta-box p { font-size: 15px; margin-bottom: 24px; }
+  .pricing-header h3 { font-size: 18px; }
+  .amount { font-size: 36px; }
+  .onboarding-box { padding: 36px 24px; gap: 32px; }
+  .onboarding-card-body { padding: 20px; }
+  .onboarding-stats { gap: 10px; }
+  .onboarding-stat-value { font-size: 18px; }
+  .onboarding-stat-label { font-size: 10px; }
+  .step h3 { font-size: 17px; }
+  .step p { font-size: 14px; }
+  .footer { padding: 60px 0 0; }
+  .footer-grid { gap: 32px; margin-bottom: 40px; }
+  .contact-icon { width: 52px; height: 52px; }
+  .contact-icon svg { width: 24px; height: 24px; }
+  .whatsapp-float { width: 52px; height: 52px; bottom: 20px; right: 20px; }
+  .whatsapp-float svg { width: 26px; height: 26px; }
 }
 
 @media (max-width: 720px) {
   .nav-links {
     position: fixed;
-    inset: 130px 0 auto 0;
+    inset: 90px 0 auto 0;
     background: linear-gradient(180deg, var(--royal-700), var(--royal-800));
     border-bottom: 1px solid rgba(255,255,255,0.12);
     flex-direction: column;
-    padding: 20px 24px;
+    padding: 16px 20px;
     gap: 0;
     display: none;
     box-shadow: var(--shadow-lg);
   }
   .nav-links.open { display: flex; }
   .nav-links li { border-bottom: 1px solid rgba(255,255,255,0.1); }
-  .nav-links a { display: block; padding: 14px 0; color: rgba(255,255,255,0.9); }
+  .nav-links a { display: block; padding: 12px 0; font-size: 15px; color: rgba(255,255,255,0.9); }
   .nav-links a:hover { color: #fff; }
   .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
 
   .features-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .steps { flex-direction: column; gap: 40px; }
+  .steps { flex-direction: column; gap: 32px; }
   .step-arrow { transform: rotate(90deg); }
-  .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero-buttons { flex-direction: column; }
   .hero-buttons .btn { width: 100%; }
-  .hero { padding: 120px 0 60px; }
   .dashboard-preview { animation: none; }
-  .onboarding-box { padding: 32px 24px; gap: 40px; }
+  .onboarding-box { padding: 28px 20px; gap: 28px; }
   .onboarding-card { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .logo-img { height: 56px; }
+  .nav-container { height: 72px; }
+  .nav-links { inset: 72px 0 auto 0; }
+  .hero { padding: 90px 0 48px; }
+  .hero h1 { font-size: 26px; line-height: 1.12; }
+  .hero-subtitle { font-size: 14px; }
+  .hero-tags { gap: 6px; }
+  .hero-tag { padding: 6px 12px; font-size: 11px; }
+  .badge { padding: 6px 14px; font-size: 10px; margin-bottom: 16px; }
+  .section-tag { padding: 6px 14px; font-size: 10px; margin-bottom: 14px; }
+  .section-header { margin-bottom: 32px; }
+  .section-header h2 { font-size: 24px; }
+  .section-header p { font-size: 14px; }
+  .features, .pricing, .how-it-works, .contact, .cta, .onboarding { padding: 48px 0; }
+  .feature-card { padding: 20px; border-radius: var(--radius-sm); }
+  .feature-icon { width: 44px; height: 44px; border-radius: 10px; margin-bottom: 14px; }
+  .feature-icon svg { width: 20px; height: 20px; }
+  .feature-card h3 { font-size: 16px; }
+  .feature-card p { font-size: 14px; }
+  .pricing-card { padding: 24px; border-radius: var(--radius-sm); }
+  .pricing-header h3 { font-size: 17px; }
+  .pricing-header p { font-size: 13px; margin-bottom: 16px; }
+  .amount { font-size: 32px; }
+  .currency { font-size: 16px; }
+  .period { font-size: 14px; }
+  .pricing-trial { font-size: 13px; margin-bottom: 16px; }
+  .pricing-features li { padding: 8px 0; font-size: 14px; }
+  .pricing-features svg { width: 16px; height: 16px; }
+  .contact-card { padding: 24px 20px; border-radius: var(--radius-sm); }
+  .contact-card h3 { font-size: 16px; }
+  .contact-card p { font-size: 14px; margin-bottom: 16px; }
+  .contact-icon { width: 48px; height: 48px; }
+  .contact-icon svg { width: 22px; height: 22px; }
+  .cta-box { padding: 36px 20px; border-radius: var(--radius-sm); }
+  .cta-box h2 { font-size: 24px; }
+  .cta-box p { font-size: 14px; margin-bottom: 20px; }
+  .btn-lg { padding: 12px 24px; font-size: 14px; }
+  .step-number { width: 48px; height: 48px; font-size: 18px; margin-bottom: 12px; }
+  .step h3 { font-size: 16px; }
+  .step p { font-size: 13px; }
+  .onboarding-box { padding: 24px 16px; gap: 24px; border-radius: var(--radius-sm); }
+  .onboarding-content h2 { font-size: 24px; }
+  .onboarding-lead { font-size: 15px; margin-bottom: 24px; }
+  .onboarding-list { gap: 16px; }
+  .onboarding-icon { width: 38px; height: 38px; border-radius: 10px; }
+  .onboarding-icon svg { width: 18px; height: 18px; }
+  .onboarding-list li div strong { font-size: 14px; }
+  .onboarding-list li div span { font-size: 13px; }
+  .onboarding-card { border-radius: var(--radius-sm); }
+  .onboarding-card-body { padding: 16px; }
+  .onboarding-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px; }
+  .onboarding-stat { padding: 8px; }
+  .onboarding-stat-value { font-size: 16px; }
+  .onboarding-stat-label { font-size: 9px; }
+  .onboarding-status { padding: 10px 12px; font-size: 12px; }
+  .onboarding-status svg { width: 16px; height: 16px; }
+  .footer { padding: 48px 0 0; }
+  .footer-grid { gap: 24px; margin-bottom: 32px; }
+  .footer-brand p { font-size: 14px; }
+  .footer-links h4 { font-size: 12px; margin-bottom: 14px; }
+  .footer-links a { font-size: 14px; }
+  .footer-bottom { padding: 20px 0; font-size: 12px; }
+  .trusted { padding: 20px 0; }
+  .trusted p { font-size: 12px; }
+  .preview-cards { gap: 6px; margin-bottom: 14px; }
+  .p-card { padding: 8px; gap: 4px; }
+  .p-label { font-size: 10px; }
+  .p-value { font-size: 13px; }
+  .preview-chart { height: 80px; gap: 6px; }
+  .preview-body { padding: 14px; }
+  .preview-header { padding: 12px 14px; }
+  .whatsapp-float { width: 48px; height: 48px; bottom: 16px; right: 16px; }
+  .whatsapp-float svg { width: 24px; height: 24px; }
 }
